@@ -6,8 +6,12 @@ $title = "About";
 
 require_once "includes/header.php";
 ?>
-<div class="w3-container w3-padding-32" id="home.php#about">
-            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+<div class="w3-padding-16" >
+<div class="w3-row w3-center w3-dark-grey w3-padding-48 w3-section">
+    <span class="w3-xlarge">About</span>
+  </div>
+</div>
+<div class="w3-container w3-padding-32 w3-center" id="home.php#about">
             <p>We aim to fulfill every student and facility's ambitions of putting ideas into action. Our goal is to
                 hold ideas for any member of the community to join.
             </p>

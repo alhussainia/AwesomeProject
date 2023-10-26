@@ -9,6 +9,9 @@ require_once "includes/header.php";
 <style>
     .menu {
   display: none;
+  .mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
 }
 </style>
 <!--Logo with background picture-->
@@ -36,8 +39,24 @@ require_once "includes/header.php";
     <div class="w3-quarter w3-section">
     <span class="w3-xlarge">250+</span><br>ECS Students
         </div>
+</div>
+<div class="w3-row w3-center w3-padding-16 w3-xlarge">
+    <span class = "desc"> Projects in Action </span>
     </div>
-
+    <div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="https://news.etown.edu/files/2023/08/Fox-and-Stoner.png" style="width:100%">
+  <img class="mySlides" src="https://news.etown.edu/files/2023/10/53272463433_656ce5b40b_k.jpeg" style="width:100%">
+  <img class="mySlides" src="https://www.etown.edu/depts/engineering-physics/images/project-teddy-400x250.jpg" style="width:100%">
+  <img class="mySlides" src="https://www.etown.edu/depts/engineering-physics/images/project-solarcell-400x250.jpg" style="width:100%">
+  <img class="mySlides" src="https://www.etown.edu/depts/engineering-physics/images/project-pacecar-400x250.jpg" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+</div>
 
     <div class="w3-container" id="menu">
   <div class="w3-content" style="max-width:700px">
@@ -59,16 +78,24 @@ require_once "includes/header.php";
 </div>
       <div id="CS" class="w3-container menu w3-padding-48 w3-card">
       <h5>Computer Science</h5>
-      <p class="w3-text-grey">The Department of Computer Science at Elizabethtown College is all about hands-on experiences. We don’t believe that students should sit in a room and hear lectures. We believe that students should be able to get involved with hands-on projects early on.</p><br>
+      <p class="w3-text-grey">The Department of Computer Science at Elizabethtown College is all about hands-on experiences. We don’t believe that students should sit in a room and hear lectures. We believe that students should be able to get involved with hands-on projects early on. From projects including robotics, coding, and databases.</p><br>
 </div>
+</div>
+<a href="projects.php" class="w3-padding-16 w3-center w3-bar-item w3-tag w3-button">Check Out Available Projects</a>
+
+
+
+  
+
       
 
 
-
+</div>
 <?php
 require_once "includes/footer.php"
 ?>
 <script>
+  //JavaScript for the Engineering and Computer Science information
 function openMenu(evt, menuName) {
   var i, x, tablinks;
   x = document.getElementsByClassName("menu");
@@ -83,6 +110,23 @@ function openMenu(evt, menuName) {
   evt.currentTarget.firstElementChild.className += " w3-dark-grey";
 }
 document.getElementById("myLink").click();
+
+//JavaScript for the photo slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  x[slideIndex-1].style.display = "block"; 
+}
 </script>
 
 

@@ -11,9 +11,11 @@ require_once "includes/header.php";
       rel="stylesheet"
     />
 <link rel="stylesheet" href="css/dropdown.css">
-<div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
+<div class="w3-padding-16" >
+<div class="w3-row w3-center w3-dark-grey w3-padding-48 w3-section">
     <span class="w3-xlarge">Projects</span>
   </div>
+</div>
 
 
 <!--Dropdown menu with the project subjects-->
@@ -90,7 +92,7 @@ require_once "includes/header.php";
             <div class="input-box"></div>
             <div class="list">
             <input type = "radio" name = "drop12" id = "id12" class = "radio">
-            <label for ="id11">
+            <label for ="id12">
                 <span class = "all-audiences"> All Audiences</span>
             </label>
             <input type = "radio" name = "drop13" id = "id13" class = "radio">

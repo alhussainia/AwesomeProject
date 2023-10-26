@@ -6,10 +6,14 @@ $title = "Submit a Project";
 
 require_once "includes/header.php";
 ?>
-<div class="w3-container w3-padding-32" id="submit">
-    
-            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 w3-center">Submit a Project Idea</h3>
-            <p>Lets get in touch and talk about your next project.</p>
+<div class="w3-padding-16" id="submit">
+<div class="w3-row w3-center w3-dark-grey w3-padding-48 w3-section">
+    <span class="w3-row w3-center w3-dark-grey w3-padding-16 w3-xlarge">Submit a Project Idea</span>
+  </div>
+  <div class="w3-row w3-center w3-large ">
+            <p>Have a project idea?</p>
+            <p>We would love to hear about it!</p>
+            <p>
             <form action="/action_page.php" target="_blank">
                 <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
                 <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
@@ -20,6 +24,8 @@ require_once "includes/header.php";
                 </button>
             </form>
         </div>
+</div>
+
         <?php
 require_once "includes/footer.php"
 ?>

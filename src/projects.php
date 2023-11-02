@@ -88,28 +88,37 @@ require_once "includes/header.php";
 <!--Dropdown menu with the project audience-->
     <div class ="project-specs">
         <div class = "dropdown">
-            <div class = "title">Select a Project Audience</div>
+            <div class = "title">Select a Project Level</div>
             <div class="input-box"></div>
             <div class="list">
+            <div class="search-box">   
+            <input
+              type="search"
+              name=""
+              id="search"
+              placeholder="Search Options"
+              onkeyup="search(this)"
+            />
+          </div>
             <input type = "radio" name = "drop12" id = "id12" class = "radio">
             <label for ="id12">
-                <span class = "all-audiences"> All Audiences</span>
+                <span class = "all-levels">All Levels</span>
             </label>
             <input type = "radio" name = "drop13" id = "id13" class = "radio">
             <label for ="id13">
-                <span class = "student">Student</span>
+                <span class = "capstone">Capstone Projects</span>
             </label>
             <input type = "radio" name = "drop14" id = "id14" class = "radio">
             <label for ="id14">
-                <span class = "student">Student</span>
+                <span class = "research">Research Projects</span>
             </label>
             <input type = "radio" name = "drop15" id = "id15" class = "radio">
             <label for ="id15">
-                <span class = "faculty">Faculty</span>
+                <span class = "research-faculty">Research Projects with Faculty</span>
             </label>
             <input type = "radio" name = "drop16" id = "id16" class = "radio">
             <label for ="id16">
-                <span class = "community">Community</span>
+                <span class = "class">Class Projects</span>
             </label>
 </div>
 </div>
@@ -120,28 +129,7 @@ require_once "includes/header.php";
 
 <!--Dropdown menu with the project progress-->
 
-    <div class ="project-specs">
-        <div class = "dropdown">
-            <div class = "title">Select a Project Progress</div>
-            <div class="input-box"></div>
-            <div class="list">
-            <input type = "radio" name = "drop17" id = "id17" class = "radio">
-            <label for ="id17">
-                <span class = "all-projects"> All Projects</span>
-            </label>
-            <input type = "radio" name = "drop18" id = "id18" class = "radio">
-            <label for ="id18">
-                <span class = "student">Available Projects</span>
-            </label>
-            <input type = "radio" name = "drop19" id = "id19" class = "radio">
-            <label for ="id19">
-                <span class = "inprog-projects">In Progress Projects</span>
-            </label>
-            <input type = "radio" name = "drop20" id = "id20" class = "radio">
-            <label for ="id20">
-                <span class = "completed-projects">Completed Projects</span>
-            </label>
-</div>
+    
 
 
 
@@ -167,33 +155,30 @@ require_once "includes/header.php";
 
 <!-- JavaScript for dropdown menu animation -->
     <script>
-    var dropdowns = document.querySelectorAll(".input-box");
-    dropdowns.forEach(function (input) {
-    input.addEventListener("click", function () {
+    var input = document.querySelector(".input-box");
+      input.onclick = function () {
         this.classList.toggle("open");
         let list = this.nextElementSibling;
         if (list.style.maxHeight) {
-            list.style.maxHeight = null;
-            list.style.boxShadow = null;
+          list.style.maxHeight = null;
+          list.style.boxShadow = null;
         } else {
-            list.style.maxHeight = list.scrollHeight + "px";
-            list.style.boxShadow =
-                "0 1px 2px 0 rgba(0, 0, 0, 0.15),0 1px 3px 1px rgba(0, 0, 0, 0.1)";
+          list.style.maxHeight = list.scrollHeight + "px";
+          list.style.boxShadow =
+            "0 1px 2px 0 rgba(0, 0, 0, 0.15),0 1px 3px 1px rgba(0, 0, 0, 0.1)";
         }
-    });
+      };
 
-    var rad = input.querySelectorAll(".radio");
-    rad.forEach(function (item) {
-        item.addEventListener("change", function () {
-            input.innerHTML = item.nextElementSibling.innerHTML;
-            input.click();
+      var rad = document.querySelectorAll(".radio");
+      rad.forEach((item) => {
+        item.addEventListener("change", () => {
+          input.innerHTML = item.nextElementSibling.innerHTML;
+          input.click();
         });
-    });
+      });
 
-    var label = input.nextElementSibling.querySelectorAll("label");
-});
-
-    function search(searchin) {
+      var label = document.querySelectorAll("label");
+      function search(searchin) {
         let searchVal = searchin.value;
         searchVal = searchVal.toUpperCase();
         label.forEach((item) => {
@@ -208,6 +193,7 @@ require_once "includes/header.php";
           list.style.maxHeight = list.scrollHeight + "px";
         });
       }
+
     </script>
     </body>
 <?php

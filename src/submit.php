@@ -8,7 +8,7 @@ require_once "includes/header.php";
 ?>
 <div class="w3-padding-16" id="submit">
 <div class="w3-row w3-center w3-dark-grey w3-padding-48 w3-section">
-    <span class="w3-row w3-center w3-dark-grey w3-padding-16 w3-xlarge">Submit a Project Idea</span>
+    <span class="w3-row w3-center w3-dark-grey w3-padding-16 w3-xlarge">Every Project Starts with an Idea</span>
   </div>
   <div class="w3-row w3-center w3-large ">
             <p>Have a project idea?</p>

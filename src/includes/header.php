@@ -15,7 +15,6 @@
 
             <div class="w3-right w3-hide-small">
                 <a href="index.php#home" class="w3-bar-item w3-button">Home</a>
-                <a href="about.php" class="w3-bar-item w3-button">About</a>
                 <a href='projects.php' class="w3-bar-item w3-button">Projects</a>
                 <a href="submit.php" class="w3-bar-item w3-button">Submit a Project Idea</a>
             </div>

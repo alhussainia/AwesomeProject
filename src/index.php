@@ -17,7 +17,7 @@ require_once "includes/header.php";
 <!--Logo with background picture-->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
         <img src="https://www.etown.edu/depts/computer-science/images/hero-CS-masters-1100x450.jpg"
-            alt="Elizabethtown College" width="1500" height="800">
+            alt="Elizabethtown College" width="1440" height="800">
         <div class="w3-display-middle w3-margin-top w3-center">
             <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>ECS</b></span>
                 <span class="w3-hide-small w3-text-light-grey">Projects</span>
@@ -46,9 +46,9 @@ require_once "includes/header.php";
     <div class="w3-content w3-display-container" style="max-width:800px">
   <img class="mySlides" src="https://news.etown.edu/files/2023/08/Fox-and-Stoner.png" style="width:100%">
   <img class="mySlides" src="https://news.etown.edu/files/2023/10/53272463433_656ce5b40b_k.jpeg" style="width:100%">
-  <img class="mySlides" src="https://www.etown.edu/depts/engineering-physics/images/project-teddy-400x250.jpg" style="width:100%">
-  <img class="mySlides" src="https://www.etown.edu/depts/engineering-physics/images/project-solarcell-400x250.jpg" style="width:100%">
-  <img class="mySlides" src="https://www.etown.edu/depts/engineering-physics/images/project-pacecar-400x250.jpg" style="width:100%">
+  <img class="mySlides" src="https://news.etown.edu/files/2023/08/Marston.png" style="width:100%">
+  <img class="mySlides" src="https://news.etown.edu/files/2023/07/Botticelli-1.png" style="width:100%">
+  <img class="mySlides" src="https://news.etown.edu/files/2023/06/Brightup-Klinefelter.png" style="width:100%">
   <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
     <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
     <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
@@ -57,11 +57,15 @@ require_once "includes/header.php";
     <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
   </div>
 </div>
-
+<div class = "w3-container w3-center" id = "about">
+    <span class = "w3-large"> About</span>
+    <p>We aim to fulfill every student and facility's ambitions of putting ideas into action. Our goal is to
+                hold ideas for any member of the community to join.
+</div>
     <div class="w3-container" id="menu">
   <div class="w3-content" style="max-width:700px">
  
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">ELIZABETHTOWN COLLEGE ECS DEPARTMENT</span></h5>
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">ELIZABETHTOWN COLLEGE ENGINEERING AND COMPUTER SCIENCE DEPARTMENTS</span></h5>
   
     <div class="w3-row w3-center w3-card w3-padding">
       <a href="javascript:void(0)" onclick="openMenu(event, 'Eng');" id="myLink">
@@ -72,13 +76,15 @@ require_once "includes/header.php";
       </a>
     </div>
 
-    <div id="Eng" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Engineering</h5>
-      <p class="w3-text-grey">Elizabethtown College’s Engineering program is designed to prepare students for a technical career in the workforce or for graduate school. We strongly believe in producing well-rounded generalist engineers who understand the mechanical and electrical systems of a design and how those systems interact with the environment and with industry. We challenge our students, pushing them to become innovators of the future. They receive personal attention from our faculty and gain hands-on experience in design and fabrication laboratories.</p><br>
+    <div id="Eng" class="w3-container menu w3-padding-48 w3-card w3-center">
+      <h5><a href = "https://www.etown.edu/schools/school-of-engineering-and-computer-science/engineering/index.aspx" target ="_blank">Engineering</h5></a>
+      <p class="w3-text-grey">Elizabethtown College’s Engineering program is designed to prepare students for a technical career in the workforce or for graduate school. We strongly believe in producing well-rounded generalist engineers who understand the mechanical and electrical systems of a design and how those systems interact with the environment and with industry. We challenge our students, pushing them to become innovators of the future. They receive personal attention from our faculty and gain hands-on experience in design and fabrication laboratories.</p>
+      <p> Featuring: Biomedical Engineering, Civil Engineering, Electrical Engineering, Enviornmental Engineering, Industrial and Systems Engineering, Mechanical Engineering</p>
 </div>
-      <div id="CS" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Computer Science</h5>
-      <p class="w3-text-grey">The Department of Computer Science at Elizabethtown College is all about hands-on experiences. We don’t believe that students should sit in a room and hear lectures. We believe that students should be able to get involved with hands-on projects early on. From projects including robotics, coding, and databases.</p><br>
+      <div id="CS" class="w3-container menu w3-padding-48 w3-card w3-center">
+      <h5><a href = "https://www.etown.edu/schools/school-of-engineering-and-computer-science/computer-science/index.aspx" target = "_blank">Computer Science</h5></a>
+      <p class="w3-text-grey">The Department of Computer Science at Elizabethtown College is all about hands-on experiences. We don’t believe that students should sit in a room and hear lectures. We believe that students should be able to get involved with hands-on projects early on. From projects including robotics, coding, and databases.</p>
+      <p>Featuring: Computer Engineering, Computer Science, Data Science, Information Systems
 </div>
 </div>
 <a href="projects.php" class="w3-padding-16 w3-center w3-bar-item w3-tag w3-button">Check Out Available Projects</a>

@@ -12,8 +12,8 @@ require_once "includes/header.php";
         <img src="https://www.etown.edu/depts/computer-science/images/hero-CS-masters-1100x450.jpg"
             alt="Elizabethtown College" width="1440" height="800">
         <div class="w3-display-middle w3-margin-top w3-center">
-            <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>ECS</b></span>
-                <span class="w3-hide-small w3-text-light-grey">Projects</span>
+            <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>ECS Projects</b></span>
+                
             </h1>
         </div>
     </header>

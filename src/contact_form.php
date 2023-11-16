@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $subject = $_POST['Subject'];
             $comment = $_POST['Comment'];
         
-            $to = 'alhussainia@etown.edu';
+            $to = 'alhussainianfal@gmail.com';
             $subject = 'New message from your website';
             $message = "Name: $name\nEmail: $email\nSubject: $subject\nComment: $comment";
         
@@ -13,6 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
             if (mail($to, $subject, $message, $headers)) {
                 echo "Thank you! Your message has been sent. Please allow us 3-5 business days to respond.";
+                header("refresh:5;url=index.php"); //takes you to home page after 5 seconds
             } else {
                 echo "Oops! Something went wrong.";
             }

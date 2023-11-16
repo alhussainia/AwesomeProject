@@ -6,14 +6,7 @@ $title = "Elizabethtown College Project";
 
 require_once "includes/header.php";
 ?>
-<style>
-    .menu {
-  display: none;
-  .mySlides {display:none}
-.w3-left, .w3-right, .w3-badge {cursor:pointer}
-.w3-badge {height:13px;width:13px;padding:0}
-}
-</style>
+<link rel="stylesheet" href="css/design.css">
 <!--Logo with background picture-->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
         <img src="https://www.etown.edu/depts/computer-science/images/hero-CS-masters-1100x450.jpg"
@@ -24,7 +17,7 @@ require_once "includes/header.php";
             </h1>
         </div>
     </header>
-
+<body>
     <!--Infographic bar-->
     <div class="w3-row w3-center w3-dark-grey w3-padding-16">
     <div class="w3-quarter w3-section">
@@ -79,16 +72,16 @@ require_once "includes/header.php";
     <div id="Eng" class="w3-container menu w3-padding-48 w3-card w3-center">
       <h5><a href = "https://www.etown.edu/schools/school-of-engineering-and-computer-science/engineering/index.aspx" target ="_blank">Engineering</h5></a>
       <p class="w3-text-grey">Elizabethtown College’s Engineering program is designed to prepare students for a technical career in the workforce or for graduate school. We strongly believe in producing well-rounded generalist engineers who understand the mechanical and electrical systems of a design and how those systems interact with the environment and with industry. We challenge our students, pushing them to become innovators of the future. They receive personal attention from our faculty and gain hands-on experience in design and fabrication laboratories.</p>
-      <p> Featuring: Biomedical Engineering, Civil Engineering, Electrical Engineering, Enviornmental Engineering, Industrial and Systems Engineering, Mechanical Engineering</p>
+      <p> Featuring: Biomedical Engineering, Civil Engineering, Computer Engineering, Electrical Engineering, Enviornmental Engineering, Industrial and Systems Engineering, Mechanical Engineering</p>
 </div>
       <div id="CS" class="w3-container menu w3-padding-48 w3-card w3-center">
       <h5><a href = "https://www.etown.edu/schools/school-of-engineering-and-computer-science/computer-science/index.aspx" target = "_blank">Computer Science</h5></a>
       <p class="w3-text-grey">The Department of Computer Science at Elizabethtown College is all about hands-on experiences. We don’t believe that students should sit in a room and hear lectures. We believe that students should be able to get involved with hands-on projects early on. From projects including robotics, coding, and databases.</p>
-      <p>Featuring: Computer Engineering, Computer Science, Data Science, Information Systems
+      <p>Featuring: Computer Science, Data Science, Information Systems
 </div>
 </div>
 <a href="projects.php" class="w3-padding-16 w3-center w3-bar-item w3-tag w3-button">Check Out Available Projects</a>
-
+</body>
 
 
   

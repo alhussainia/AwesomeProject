@@ -6,6 +6,7 @@ $title = "Submit a Project";
 
 require_once "includes/header.php";
 ?>
+<link rel="stylesheet" href="css/design.css">
 <div class="w3-padding-16" id="submit">
 <div class="w3-row w3-center w3-dark-grey w3-padding-48 w3-section">
     <span class="w3-row w3-center w3-dark-grey w3-padding-16 w3-xlarge">Every Project Starts with an Idea</span>
@@ -14,7 +15,7 @@ require_once "includes/header.php";
             <p>Have a project idea?</p>
             <p>We would love to hear about it!</p>
             <p>
-            <form action="/action_page.php" target="_blank">
+            <form action="contact_form.php" method="post">
                 <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
                 <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
                 <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">

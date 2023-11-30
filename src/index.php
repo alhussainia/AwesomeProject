@@ -21,7 +21,7 @@ require_once "includes/header.php";
     <!--Infographic bar-->
     <div class="w3-row w3-center w3-dark-grey w3-padding-16">
     <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">100+</span><br>Available Projects
+    <span class="w3-xlarge">50+</span><br>Available Projects
   </div>
     <div class="w3-quarter w3-section">
     <span class="w3-xlarge">75+</span><br>Completed Projects
@@ -33,27 +33,48 @@ require_once "includes/header.php";
     <span class="w3-xlarge">250+</span><br>ECS Students
         </div>
 </div>
-<div class="w3-row w3-center w3-padding-16 w3-xlarge">
-    <span class = "desc"> Projects in Action </span>
-    </div>
-    <div class="w3-content w3-display-container" style="max-width:800px">
-  <img class="mySlides" src="https://news.etown.edu/files/2023/08/Fox-and-Stoner.png" style="width:100%">
-  <img class="mySlides" src="https://news.etown.edu/files/2023/10/53272463433_656ce5b40b_k.jpeg" style="width:100%">
-  <img class="mySlides" src="https://news.etown.edu/files/2023/08/Marston.png" style="width:100%">
-  <img class="mySlides" src="https://news.etown.edu/files/2023/07/Botticelli-1.png" style="width:100%">
-  <img class="mySlides" src="https://news.etown.edu/files/2023/06/Brightup-Klinefelter.png" style="width:100%">
-  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-  </div>
+
+  
+<h3 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">PROJECTS IN ACTION</h2>
+<p class = "w3-center w3-wide">↓  ↓  ↓  ↓</p>
+
+<div class="slideshow-container w3-center">
+
+<div class="mySlides fade">
+  <img src="images/Fox-and-Stoner.png" style="width:90%">
 </div>
+<div class="mySlides fade">
+  <img src="images/CS341_2023.jpeg" style="width:90%">
+</div>
+<div class="mySlides fade">
+  <img src="images/Marston.png" style="width:90%">
+</div>
+<div class="mySlides fade">
+  <img src="images/Botticelli-1.png" style="width:90%">
+</div>
+<div class="mySlides fade">
+  <img src="images/Brightup-Klinefelter.png" style="width:90%">
+</div>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+
+</div>
+<br>
+
+
+
 <div class = "w3-container w3-center" id = "about">
-    <span class = "w3-large"> About</span>
-    <p>We aim to fulfill every student and facility's ambitions of putting ideas into action. Our goal is to
-                hold ideas for any member of the community to join.
+    <h4 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">ABOUT</span></h4>
+    <p>We aim to fulfill every student and facility's ambitions of putting ideas into action.<p> Our goal is to
+                hold ideas for any member of the community to join.<p>
+                This website will not only spark motivation for students to create a project of their own, <p>but also display the hard work of students for the community to see.
+
 </div>
     <div class="w3-container" id="menu">
   <div class="w3-content" style="max-width:700px">
@@ -71,28 +92,34 @@ require_once "includes/header.php";
 
     <div id="Eng" class="w3-container menu w3-padding-48 w3-card w3-center">
       <h5><a href = "https://www.etown.edu/schools/school-of-engineering-and-computer-science/engineering/index.aspx" target ="_blank">Engineering</h5></a>
-      <p class="w3-text-grey">Elizabethtown College’s Engineering program is designed to prepare students for a technical career in the workforce or for graduate school. We strongly believe in producing well-rounded generalist engineers who understand the mechanical and electrical systems of a design and how those systems interact with the environment and with industry. We challenge our students, pushing them to become innovators of the future. They receive personal attention from our faculty and gain hands-on experience in design and fabrication laboratories.</p>
+      <p class="w3-text-grey">Elizabethtown College’s Engineering program is designed to prepare students for a technical career in the workforce or for graduate school. We strongly believe in producing well-rounded generalist engineers who understand the mechanical and electrical systems of a design and how those systems interact with the environment and with industry.</p>
       <p> Featuring: Biomedical Engineering, Civil Engineering, Computer Engineering, Electrical Engineering, Enviornmental Engineering, Industrial and Systems Engineering, Mechanical Engineering</p>
 </div>
       <div id="CS" class="w3-container menu w3-padding-48 w3-card w3-center">
       <h5><a href = "https://www.etown.edu/schools/school-of-engineering-and-computer-science/computer-science/index.aspx" target = "_blank">Computer Science</h5></a>
       <p class="w3-text-grey">The Department of Computer Science at Elizabethtown College is all about hands-on experiences. We don’t believe that students should sit in a room and hear lectures. We believe that students should be able to get involved with hands-on projects early on. From projects including robotics, coding, and databases.</p>
       <p>Featuring: Computer Science, Data Science, Information Systems
+</br>
+
 </div>
-</div>
+<div class="w3-padding-48 w3-center">
 <a href="projects.php" class="w3-padding-16 w3-center w3-bar-item w3-tag w3-button">Check Out Available Projects</a>
+</div>
 </body>
 
 
-  
+</div>
 
       
 
-
 </div>
+
 <?php
 require_once "includes/footer.php"
+
 ?>
+
+
 <script>
   //JavaScript for the Engineering and Computer Science information
 function openMenu(evt, menuName) {
@@ -110,21 +137,25 @@ function openMenu(evt, menuName) {
 }
 document.getElementById("myLink").click();
 
-//JavaScript for the photo slideshow
-var slideIndex = 1;
-showDivs(slideIndex);
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none"; 
+//JavaScript for the automatic photo slideshow
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
   }
-  x[slideIndex-1].style.display = "block"; 
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
 </script>
 

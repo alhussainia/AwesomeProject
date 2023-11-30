@@ -12,9 +12,10 @@ require_once "includes/header.php";
     <span class="w3-row w3-center w3-dark-grey w3-padding-16 w3-xlarge">Every Project Starts with an Idea</span>
   </div>
   <div class="w3-row w3-center w3-large ">
-            <p>Have a project idea?</p>
+            <p>Have a project you would like to have displayed?</p>
             <p>We would love to hear about it!</p>
             <p>
+                <!-- User input boxes to submit a project idea, which when submitted, will send the form as an email-->
             <form action="contact_form.php" method="post">
                 <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
                 <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">

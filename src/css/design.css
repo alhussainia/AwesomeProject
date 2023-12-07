@@ -3,6 +3,7 @@ the footer and the automatic slideshow */
 #footer {
     position: absolute;
     width: 100%;
+    bottom: 0;
     text-align: center;
     color: #fff !important;
     background-color: #000 !important;
@@ -15,21 +16,20 @@ the footer and the automatic slideshow */
 }
 
 .submit-button {
-    width: 100px;
-    /* Adjust width to your preference */
-    height: 100px;
-    /* Set the same value as width for a square shape */
+    width: 75px;
+    height: 40px;
     border: none;
-    background-color: purple;
-    /* Set your desired background color */
+    background-color: gray;
     color: #fff;
-    /* Set your desired text color */
     font-size: 16px;
-    /* Set your desired font size */
-    border-radius: 5px;
-    /* Optional: Add border-radius for rounded corners */
+    border-radius: 2mm;
+    position: relative;
     cursor: pointer;
+
 }
+
+
+
 
 
 .slideshow-container {

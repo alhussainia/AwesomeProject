@@ -22,14 +22,17 @@ require_once "includes/header.php";
 
 <!--Dropdown menu with the project subjects-->
     <body>
-        <form action = "api/projectdata.php" method = "POST">
+    <form action = "api/projectdata.php" method = "POST">
+    <div class = "center">
     <div class ="project-specs">
-        <div class = "dropdown">
-            
-            <div class = "title " >Select a Project Subject</div>
-            <div class="input-box"></div>
+        <div class = "dropdown-container">
+
+    <div class = "dropdown">
+            <div class = "title" >Select a Project Subject</div>
+            <div class="input-box" onclick = "toggleDropdown()">
+            <span id = "selectedOption"> Select Subject </span>
+</div>
             <div class="list" id = "dropdownOptions">
-                <!-- Not used anymore because of the implementation of the options through the database.
             <input type = "radio" name = "drop1" id = "id1" class = "radio">
             <label for ="id1">
                 <span class = "all-subjects"> All Subjects </span>
@@ -73,27 +76,47 @@ require_once "includes/header.php";
             <input type = "radio" name = "drop11" id = "id11" class = "radio">
             <label for ="id11">
                 <span class = "mech-eng">Mechanical Engineering</span>
-            </label>   -->
-</div>
-</div>
+            </label>   
+
 
 </div>
+</div>  
+</div> 
 </div>
-</div>
+
+
+
+
 <input type="submit" value="Search" class = "submit-button">
     </form>
 
+</div> 
+         
+ 
 
 
 
 
 
-</body>
 
 <!-- JavaScript for dropdown menu animation
 When clicked the menu will have an unfolding animation and when an option is clicked, the menu will fold back up.
 It also implements the database to display the results when an option is clicked. -->
     <script>
+        function toggleDropdown() {
+        var list = document.getElementById("dropdownOptions");
+        if (list.style.display === "none" || list.style.display === "") {
+            list.style.display = "block";
+        } else {
+            list.style.display = "none";
+        }
+    }
+
+    function selectOption(selected) {
+        var selectedOption = document.getElementById('selectedOption');
+        selectedOption.textContent = selected.value;
+        toggleDropdown();
+    }
         var input = document.querySelector(".input-box");
         input.onclick = function () {
         this.classList.toggle("open");
@@ -128,7 +151,7 @@ It also implements the database to display the results when an option is clicked
         rad.forEach((item) => {
         item.addEventListener("change", () => {
           input.innerHTML = item.nextElementSibling.innerHTML;
-          input.click();
+          selectOption(item);
         });
       });
 
@@ -165,3 +188,6 @@ It also implements the database to display the results when an option is clicked
 <?php
 require_once "includes/footer.php"
 ?>
+
+</body>
+</html>

@@ -20,6 +20,7 @@ if ($result->num_rows > 0) {
         echo "<label for='" . $row['projectSubject'] . "'>";
         echo "<span>" . $row['projectSubject'] . "</span>";
         echo "</label>";
+        echo "</div>";
     }
 } else {
     echo "No options available";
